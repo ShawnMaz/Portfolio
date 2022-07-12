@@ -1,0 +1,88 @@
+/* Importing fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&family=Roboto&family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #31525B;
+    --secondary-color: #B3DEE5;
+    --tertiary-color: #FFA101;
+    --quarterny-color: #FAE6B1;
+    --link-hover-text-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: "Roboto", "Ubuntu", "Open Sans", "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Header section styles start */
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h2 {
+    font-size: 36px;
+    justify-content: space-evenly;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: var(--quarterny-color);
+}
+
+header nav {
+    margin: 8px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--quarterny-color);
+    margin: 5px 0;
+    padding: 10px 15px;    
+    font-size: 22px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--link-hover-text-color);
+    text-shadow: none;
+}
+
+/* Header section styles end */
+
+
+
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        line-height: 2;
+    }
+
+    header nav ul li a:hover {
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        color: var(--link-hover-text-color); 
+    }
+}
