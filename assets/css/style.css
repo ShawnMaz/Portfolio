@@ -124,8 +124,7 @@ header nav ul li a:hover {
 }
 
 .about-me p {
-    padding: 25px 20px;
-    align-items: center;
+    margin: auto 20px;
 }
 
 /* About me section styles end */
