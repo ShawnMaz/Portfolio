@@ -102,6 +102,7 @@ header nav ul li a:hover {
 
 .hero p {
     font-size: 18px;
+    font-weight: bold;
 }
 
 /* Hero section styles end */
@@ -205,6 +206,19 @@ header nav ul li a:hover {
 }
 
 /* Contact section style ends */
+
+
+/* Footer section styles start */
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    color: var(--quarterny-color);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/* Footer section style ends */
 
 /* @media screen and (max-width: 575px) {
     header {
