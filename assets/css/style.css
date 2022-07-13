@@ -111,8 +111,8 @@ header nav ul li a:hover {
 
 .about-me {
     display: flex;
-    margin: 20px auto;
     width: 75%;
+    margin: 20px auto;
 }
 
 .about-me h2 {
@@ -120,7 +120,7 @@ header nav ul li a:hover {
     font-size: 36px;
     color: var(--primary-color);
     border-right: 5px solid var(--primary-color);
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .about-me p {
@@ -130,6 +130,81 @@ header nav ul li a:hover {
 /* About me section styles end */
 
 
+/* Projects section style starts */
+
+.projects {
+    display: flex;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.projects h2 {
+    font-size: 34px;
+    color: var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    padding: 5px 11px 5px 0;
+    width: 25%;
+}
+
+.projects div {
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .projects article {
+} */
+
+.projects div img {
+    width: 100%;
+    border: 5px solid var(--secondary-color);
+}
+
+/* Projects section style ends */
+
+
+/* Contact section style starts */
+
+.contact {
+    display: flex;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.contact h2 {
+    color: var(--primary-color);
+    font-size: 35px;
+    border-right: 5px solid var(--primary-color);
+    padding: 5px 13px 5px 0;
+}
+
+.contact div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact div p a {
+    text-decoration: none;
+    color: var(--senary-color);
+    padding: 10px 5px 5px 5px;
+    border-bottom: 5px solid var(--secondary-color); 
+}
+
+.contact div p {
+    font-size: 20px;
+    font-weight: bold;
+       
+}
+
+.contact div a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--link-hover-text-color);
+}
+
+/* Contact section style ends */
 
 /* @media screen and (max-width: 575px) {
     header {
