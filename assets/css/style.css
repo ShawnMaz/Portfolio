@@ -6,6 +6,8 @@
     --secondary-color: #B3DEE5;
     --tertiary-color: #FFA101;
     --quarterny-color: #FAE6B1;
+    --quinary-color: #eee;
+    --senary-color: #3A4145;
     --link-hover-text-color: black;
 }
 
@@ -16,8 +18,9 @@
 }
 
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--quinary-color);
     font-family: "Roboto", "Ubuntu", "Open Sans", "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 /* Header section styles start */
@@ -35,7 +38,7 @@ header {
 
 header h2 {
     font-size: 36px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 header h2 a {
@@ -67,15 +70,73 @@ header nav ul li a:hover {
     background-color: var(--secondary-color);
     border-radius: 10px;
     color: var(--link-hover-text-color);
-    text-shadow: none;
 }
 
 /* Header section styles end */
 
 
+/* Hero section styles start */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 0;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.hero img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75 );
+}
+
+.hero h1 {
+    color: var(--senary-color);
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Hero section styles end */
 
 
-@media screen and (max-width: 575px) {
+/* About me section styles start */
+
+.about-me {
+    display: flex;
+    margin: 20px auto;
+    width: 75%;
+}
+
+.about-me h2 {
+    text-align: right;
+    font-size: 36px;
+    color: var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    padding: 10px 20px;
+}
+
+.about-me p {
+    padding: 25px 20px;
+    align-items: center;
+}
+
+/* About me section styles end */
+
+
+
+/* @media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+    }
+    
     header nav ul li a {
         line-height: 2;
     }
@@ -85,4 +146,8 @@ header nav ul li a:hover {
         border-radius: 10px;
         color: var(--link-hover-text-color); 
     }
-}
+
+    .hero h1 {
+        font-size: 40px;
+    }
+} */
