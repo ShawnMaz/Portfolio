@@ -10,3 +10,6 @@ The following image shows the wireframe diagram for the html:
 
 ## Deployed Site
 The refactored site can be accessed by clicking [here](https://shawnmaz.github.io/portfolio/).
+
+---
+© 2022 Shantanu Mazumder.
