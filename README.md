@@ -9,7 +9,7 @@ The following image shows the wireframe diagram for the html:
 ![Wireframe diagram of the html page](./assets/images/html-wireframe.PNG)
 
 ## Deployed Site
-The refactored site can be accessed by clicking [here](https://shawnmaz.github.io/portfolio/).
+The refactored site can be accessed by clicking [here](https://shawnmaz.github.io/Portfolio/).
 
 ---
 © 2022 Shantanu Mazumder.
