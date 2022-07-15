@@ -31,9 +31,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
 }
 
 header h2 {
@@ -110,13 +107,13 @@ header nav ul li a:hover {
 
 /* About me section styles start */
 
-.about-me {
+#about-me {
     display: flex;
     width: 75%;
     margin: 20px auto;
 }
 
-.about-me h2 {
+#about-me h2 {
     text-align: right;
     font-size: 36px;
     color: var(--primary-color);
@@ -124,7 +121,7 @@ header nav ul li a:hover {
     padding: 5px 20px;
 }
 
-.about-me p {
+#about-me p {
     margin: auto 20px;
 }
 
@@ -133,32 +130,61 @@ header nav ul li a:hover {
 
 /* Projects section style starts */
 
-.projects {
+#projects {
     display: flex;
     width: 75%;
     margin: 40px auto;
 }
 
-.projects h2 {
+#projects h2 {
     font-size: 34px;
     color: var(--primary-color);
     border-right: 5px solid var(--primary-color);
     padding: 5px 11px 5px 0;
-    width: 25%;
 }
 
-.projects div {
-    margin: 10px 20px;
+#projects div {
+    margin: 0 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* .projects article {
-} */
+#projects article {
+    position: relative;
+    margin: 20px 0;
+}
 
-.projects div img {
-    width: 100%;
+#projects article img {
+    opacity: 85%;
     border: 5px solid var(--secondary-color);
+    object-fit: fill;
+}
+
+#projects article:first-child img {
+    max-width: 100%;
+    width: fit-content;
+    min-height: 300px;
+}
+
+#projects article img:hover{
+    opacity: 100%;
+}
+
+#projects article div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    background-color: var(--secondary-color);
+    padding: 10px 10px 10px 30px;
+}
+
+#projects article div p {
+    font-size: 14px;
+    padding: 2px 0;
 }
 
 /* Projects section style ends */
@@ -166,40 +192,40 @@ header nav ul li a:hover {
 
 /* Contact section style starts */
 
-.contact {
+#contact {
     display: flex;
     width: 75%;
     margin: 40px auto;
 }
 
-.contact h2 {
+#contact h2 {
     color: var(--primary-color);
     font-size: 35px;
     border-right: 5px solid var(--primary-color);
     padding: 5px 13px 5px 0;
 }
 
-.contact div {
+#contact div {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
 
-.contact div p a {
+#contact div p a {
     text-decoration: none;
     color: var(--senary-color);
     padding: 10px 5px 5px 5px;
     border-bottom: 5px solid var(--secondary-color); 
 }
 
-.contact div p {
+#contact div p {
     font-size: 20px;
     font-weight: bold;
        
 }
 
-.contact div a:hover {
+#contact div a:hover {
     background-color: var(--secondary-color);
     border-radius: 10px;
     color: var(--link-hover-text-color);
@@ -218,24 +244,84 @@ footer {
     justify-content: space-between;
 }
 
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Footer section style ends */
 
-/* @media screen and (max-width: 575px) {
+@media screen and (max-width: 768px){
+
+    /* Header style starts */
+
     header {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    /* Header style ends */
+
+    /* About me section style starts */
+
+    #about-me {        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me h2 {
+        border-right: none;
+        border-bottom: 5px solid var(--primary-color);
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    /* About me section style ends */
+
+
+    /* Projects section style starts */
+
+    #projects {
+        flex-direction: column;
+        align-items: center;
     }
     
-    header nav ul li a {
-        line-height: 2;
+    #projects h2 {
+        border-right: none;
+        border-bottom: 5px solid var(--primary-color);
+        padding: 5px 20px;
     }
 
-    header nav ul li a:hover {
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        color: var(--link-hover-text-color); 
+    #projects article {
+        margin: 20px auto;
+    }
+    
+    /* Projects section style ends */
+
+    /* Contacts section style starts */
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact h2 {
+        border-right: none;
+        border-bottom: 5px solid var(--primary-color);
+        padding: 5px 20px;
+        margin-bottom: 20px;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    /* Contacts section style ends */
+
+
+    /* Footer section style starts */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
     }
-} */
+
+    /* Footer section style ends */
+}
